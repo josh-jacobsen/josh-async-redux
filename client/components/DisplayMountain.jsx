@@ -6,7 +6,7 @@ export default(props) => {
       <ul>
         {props.mountains.map( (mountain) => {
           return (
-            <li>
+            <li key={mountain.id}>
               {mountain.name}{' '}
               {mountain.imgURL}
               <a href="#" onClick={() => props.showDetails(mountain.id)}>Show Details</a>

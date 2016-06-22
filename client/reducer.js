@@ -4,8 +4,14 @@ const INITIAL_STATE = {
     id: 1,
     name: "K2",
     height: 2100,
-    imgURL: "http://img.mota.ru/upload/wallpapers/source/2012/02/03/13/04/29788/mota_ru_2020327.jpg",
-  }]
+    imgURL: "http://img.mota.ru/upload/wallpapers/source/2012/02/03/13/04/29788/mota_ru_2020327.jpg"
+  },{
+    id: 2,
+    name: "Hanibal",
+    height: 3100,
+    imgURL: "http://img.mota.ru/upload/wallpapers/source/2012/02/03/13/04/29788/mota_ru_2020327.jpg"
+  },
+]
 }
 
 
