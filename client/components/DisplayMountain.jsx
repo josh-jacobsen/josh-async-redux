@@ -8,7 +8,7 @@ export default(props) => {
           return (
             <li key={mountain.id}>
               {mountain.name}{' '}
-              {mountain.imgURL}
+{' '}
               <a href="#" onClick={() => props.showDetails(mountain.id)}>Show Details</a>
             </li>
           )

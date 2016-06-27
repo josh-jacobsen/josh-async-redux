@@ -4,12 +4,28 @@ import DisplayPort from '../containers/DisplayPort'
 import DisplayDetails from '../containers/DisplayDetails'
 
 
-export default () => {
-  return (
-    <div>
-      <h2>Welcome</h2>
-      <DisplayPort />
-      <DisplayDetails />
-    </div>
-  )
-}
+export default React.createClass({
+  render() {
+    return (
+      <div>
+        <div>
+          <h2 className="title">Welcome</h2>
+        </div>
+        <div>
+          {this.props.children}
+        </div>
+      </div>
+    )
+  }
+})
+//
+//
+// () => {
+//   return (
+//   )
+// }
+
+
+
+// <DisplayPort />
+// <DisplayDetails />

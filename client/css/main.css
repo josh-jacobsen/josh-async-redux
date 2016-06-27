@@ -1,0 +1,9 @@
+.imgDiv {
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.title {
+  color: red;
+}
