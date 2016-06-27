@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-export default (props) => {
-  console.log("detail pane", props.mountain);
+export default ({props: props, params: {mountainID}}) => {
+  console.log("params", params);
   return (
     <div>
       <p>Detail Pane</p>
@@ -14,7 +14,7 @@ export default (props) => {
               <img src={mountain.imgURL}/>
             </div>
             <div className="homeLink">
-              <Link to="/">Home</Link>
+              <button><Link to="/">Home</Link></button>
             </div>
           </div>
           )

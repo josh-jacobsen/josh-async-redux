@@ -21,10 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
   render(
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path='/' component={App}>
-          <IndexRoute component={DisplayPort} />
-          <Route path='display' component={DisplayDetails} />
+        <Route path='/' component={App} >
+          <Route path="mountains" component={DisplayPort} >
+            <Route path='mountains/:id' component={DisplayDetails}/>
         </Route>
+      </Route>
       </Router>
     </Provider>,
     document.getElementById("app")
