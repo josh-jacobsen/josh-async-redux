@@ -3,13 +3,23 @@ const INITIAL_STATE = {
   mountains: [{
     id: 1,
     name: "K2",
-    height: 2100,
-    imgURL: "http://img.mota.ru/upload/wallpapers/source/2012/02/03/13/04/29788/mota_ru_2020327.jpg"
+    height: 8611,
+    imgURL: "http://i.imgur.com/mISqV24.jpg"
   },{
     id: 2,
-    name: "Hanibal",
-    height: 3100,
-    imgURL: "http://img.mota.ru/upload/wallpapers/source/2012/02/03/13/04/29788/mota_ru_2020327.jpg"
+    name: "Lhotse",
+    height: 8516,
+    imgURL: "http://himalayanexperience.com/img/expeditions/lhotse/im01.jpg"
+  },{
+    id: 3,
+    name: "Makalu",
+    height: 8485,
+    imgURL: "http://www.mountainprofessor.com/images/Makalu-B-B.jpg"
+  },{
+    id: 4,
+    name: "Gasherbrum",
+    height: 8080,
+    imgURL: "http://images.summitpost.org/original/129358.jpg"
   },
 ]
 }
