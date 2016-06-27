@@ -3,14 +3,8 @@ import { connect } from 'react-redux'
 import DetailPane from '../components/DetailPane'
 
 const mapStateToProps = (state) => {
-  const mountainDetails = state.mountains.filter( (mountain) => {
-    if (state.selectedThing === mountain.id) {
-      console.log(mountain);
-      return mountain
-    }
-  })
   return {
-    mountain: mountainDetails
+    mountains: state.mountains 
   }
 
 }

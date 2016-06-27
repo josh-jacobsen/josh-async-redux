@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-export default ({props: props, params: {mountainID}}) => {
-  console.log("params", params);
+export default (props) => {
+  console.log(props.params)
   return (
     <div>
       <p>Detail Pane</p>
-      {props.mountain.map ((mountain) => {
+      {props.mountains.filter((mountain) => ( mountain.id === Number(props.params.id))).map ((mountain) => {
         return(
           <div key={mountain.id}>
             {mountain.name}

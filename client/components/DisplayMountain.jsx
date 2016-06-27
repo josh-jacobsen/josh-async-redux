@@ -9,7 +9,7 @@ export default(props) => {
             <div key={mountain.id}>
               {mountain.name}{' '}
               {' '}
-            <Link to={{ pathname: '/mountains', query: {id: mountain.id} }}>Show Details</Link>
+            <Link to={'mountains/'+mountain.id}>Show Details</Link>
             </div>
           )
         })}
