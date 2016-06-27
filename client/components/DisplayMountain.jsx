@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { hashHistory } from 'react-router'
 
 export default(props) => {
   return (
@@ -8,8 +8,10 @@ export default(props) => {
           return (
             <div key={mountain.id}>
               {mountain.name}{' '}
-{' '}
-              <a href="#" onClick={() => props.showDetails(mountain.id)}>Show Details</a>
+              {' '}
+              <a onClick={() => { props.showDetails(mountain.id)
+              hashHistory.push("display")}}>Show Details</a>
+
             </div>
           )
         })}

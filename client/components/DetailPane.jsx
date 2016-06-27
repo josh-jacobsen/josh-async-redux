@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default (props) => {
   console.log("detail pane", props.mountain);
@@ -11,6 +12,9 @@ export default (props) => {
             {mountain.name}
             <div className="imgDiv">
               <img src={mountain.imgURL}/>
+            </div>
+            <div className="homeLink">
+              <Link to="/">Home</Link>
             </div>
           </div>
           )

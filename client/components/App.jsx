@@ -14,19 +14,8 @@ export default React.createClass({
         <div>
           {this.props.children}
         </div>
-      
+
       </div>
     )
   }
 })
-//
-//
-// () => {
-//   return (
-//   )
-// }
-
-
-
-// <DisplayPort />
-// <DisplayDetails />
