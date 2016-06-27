@@ -9,6 +9,9 @@ export default (props) => {
         return(
           <div key={mountain.id}>
             {mountain.name}
+            <div className="imgDiv">
+              <img src={mountain.imgURL}/>
+            </div>
           </div>
           )
       })}
